@@ -1,0 +1,13 @@
+CREATE SCHEMA api_estudiantes DEFAULT CHARACTER SET utf8mb4;
+
+USE api_estudiantes;
+
+CREATE TABLE estudiantes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255),
+    apellido VARCHAR(255),
+    fecha_de_nacimiento DATE
+);
+
+INSERT INTO estudiantes (nombre, apellido, fecha_de_nacimiento) VALUES ('Juan', 'Pérez', '2001-05-15');
+INSERT INTO estudiantes (nombre, apellido, fecha_de_nacimiento) VALUES ('Ana', 'Martínez', '2002-03-22');
